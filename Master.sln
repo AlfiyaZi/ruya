@@ -1,0 +1,330 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B9DF482F-3A7D-441B-AE7E-6CEF78669DC4}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7E47687E-CEA3-4FE4-B8C5-E613443161B7}"
+	ProjectSection(SolutionItems) = preProject
+		CodeAnalysisDictionary.xsd = CodeAnalysisDictionary.xsd
+		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+		GlobalBuild.ps1 = GlobalBuild.ps1
+		GlobalCodeAnalysisDictionary.xml = GlobalCodeAnalysisDictionary.xml
+		GlobalObfuscator.crproj = GlobalObfuscator.crproj
+		LICENSE.txt = LICENSE.txt
+		ReadMe.md = ReadMe.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{93642A19-BF0B-4736-82D8-CDFB6A1F1C36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{184966F8-8133-46DD-AB87-F70D7845EA1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Core", "Ruya.Core\Ruya.Core.csproj", "{9445ABD7-37C8-4DDC-8F18-C981DA7085D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Diagnostics", "Ruya.Diagnostics\Ruya.Diagnostics.csproj", "{118CCD3A-D266-406C-8A5E-F7E0F986D3E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Host", "Ruya.Host\Ruya.Host.csproj", "{80D7D5EF-F856-4A55-840B-0D07E7FD1718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Configuration", "Ruya.Configuration\Ruya.Configuration.csproj", "{CF53ADB9-F8DE-4038-8DF6-EF26121EBDB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Security", "Ruya.Security\Ruya.Security.csproj", "{013D445E-2F57-46DD-A55B-D9148E03D520}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.SignalR", "Ruya.SignalR\Ruya.SignalR.csproj", "{CF9C0166-863C-492E-9FD7-8113295308FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Net", "Ruya.Net\Ruya.Net.csproj", "{083C20CF-68C1-4548-B7B9-9A9D049228AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.IO", "Ruya.IO\Ruya.IO.csproj", "{4AC2D5A9-C888-437C-9994-BDA6A3A2687D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Data", "Ruya.Data\Ruya.Data.csproj", "{67B57DDD-D60A-48B5-AD4A-6DBDC20CB381}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Xml", "Ruya.Xml\Ruya.Xml.csproj", "{A02580A8-495F-443A-970A-E667E1CC712F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Json", "Ruya.Json\Ruya.Json.csproj", "{1E761B84-0F20-492A-A536-8ECF4BCDB581}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Scheduler", "Ruya.Scheduler\Ruya.Scheduler.csproj", "{A75D73C8-06FA-40A1-9DCB-F2259AC3CE0E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Composition", "Ruya.Composition\Ruya.Composition.csproj", "{53D261FF-6264-4D94-AC40-C0F5786D71CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Caching", "Ruya.Caching\Ruya.Caching.csproj", "{DFD37542-6D8E-4B23-A836-7E6065B221A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Web", "Ruya.Web\Ruya.Web.csproj", "{C926231D-0173-4696-B336-FD73CAFCE247}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Data.Entity", "Ruya.Data.Entity\Ruya.Data.Entity.csproj", "{A1DC9ADD-702E-48AD-863F-C9594DF20990}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Data.Entity.Interfaces", "Ruya.Data.Entity.Interfaces\Ruya.Data.Entity.Interfaces.csproj", "{76CAEE81-BDA7-439B-BEBB-58DBD8CBA299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Core.Interfaces", "Ruya.Core.Interfaces\Ruya.Core.Interfaces.csproj", "{B0A63D77-A526-4D81-983E-A38414FD1F0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Domain", "Ruya.Domain\Ruya.Domain.csproj", "{BFFB49F3-5696-4649-956F-F1B83786BBF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Core.Tests", "Ruya.Core.Tests\Ruya.Core.Tests.csproj", "{216D20C9-45D1-4BAD-AE4B-5F172C3D03C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Configuration.Tests", "Ruya.Configuration.Tests\Ruya.Configuration.Tests.csproj", "{C0EC0DE5-5C8F-4448-A8B0-FEEF14422667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Diagnostics.Tests", "Ruya.Diagnostics.Tests\Ruya.Diagnostics.Tests.csproj", "{7D6BE945-656B-4434-86AF-9520FC50D2BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Data.Entity.Tests", "Ruya.Data.Entity.Tests\Ruya.Data.Entity.Tests.csproj", "{54D4E0C4-660D-4C98-B393-76E2CC07D0A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Net.Tests", "Ruya.Net.Tests\Ruya.Net.Tests.csproj", "{5A33743C-928C-4867-B2D2-D76125796D5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Security.Tests", "Ruya.Security.Tests\Ruya.Security.Tests.csproj", "{94BBC091-911A-4D8D-A428-30349BBDFFA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ruya.Composition.Interfaces", "Ruya.Composition.Interfaces\Ruya.Composition.Interfaces.csproj", "{39ED86D9-6AF8-474F-AF2B-9946F17BDF56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9445ABD7-37C8-4DDC-8F18-C981DA7085D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9445ABD7-37C8-4DDC-8F18-C981DA7085D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9445ABD7-37C8-4DDC-8F18-C981DA7085D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9445ABD7-37C8-4DDC-8F18-C981DA7085D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118CCD3A-D266-406C-8A5E-F7E0F986D3E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118CCD3A-D266-406C-8A5E-F7E0F986D3E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118CCD3A-D266-406C-8A5E-F7E0F986D3E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118CCD3A-D266-406C-8A5E-F7E0F986D3E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80D7D5EF-F856-4A55-840B-0D07E7FD1718}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80D7D5EF-F856-4A55-840B-0D07E7FD1718}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80D7D5EF-F856-4A55-840B-0D07E7FD1718}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80D7D5EF-F856-4A55-840B-0D07E7FD1718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF53ADB9-F8DE-4038-8DF6-EF26121EBDB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF53ADB9-F8DE-4038-8DF6-EF26121EBDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF53ADB9-F8DE-4038-8DF6-EF26121EBDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF53ADB9-F8DE-4038-8DF6-EF26121EBDB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{013D445E-2F57-46DD-A55B-D9148E03D520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{013D445E-2F57-46DD-A55B-D9148E03D520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{013D445E-2F57-46DD-A55B-D9148E03D520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{013D445E-2F57-46DD-A55B-D9148E03D520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF9C0166-863C-492E-9FD7-8113295308FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF9C0166-863C-492E-9FD7-8113295308FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF9C0166-863C-492E-9FD7-8113295308FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF9C0166-863C-492E-9FD7-8113295308FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{083C20CF-68C1-4548-B7B9-9A9D049228AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083C20CF-68C1-4548-B7B9-9A9D049228AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083C20CF-68C1-4548-B7B9-9A9D049228AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083C20CF-68C1-4548-B7B9-9A9D049228AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC2D5A9-C888-437C-9994-BDA6A3A2687D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC2D5A9-C888-437C-9994-BDA6A3A2687D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC2D5A9-C888-437C-9994-BDA6A3A2687D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC2D5A9-C888-437C-9994-BDA6A3A2687D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67B57DDD-D60A-48B5-AD4A-6DBDC20CB381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67B57DDD-D60A-48B5-AD4A-6DBDC20CB381}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67B57DDD-D60A-48B5-AD4A-6DBDC20CB381}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67B57DDD-D60A-48B5-AD4A-6DBDC20CB381}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02580A8-495F-443A-970A-E667E1CC712F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02580A8-495F-443A-970A-E667E1CC712F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02580A8-495F-443A-970A-E667E1CC712F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02580A8-495F-443A-970A-E667E1CC712F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E761B84-0F20-492A-A536-8ECF4BCDB581}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E761B84-0F20-492A-A536-8ECF4BCDB581}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E761B84-0F20-492A-A536-8ECF4BCDB581}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E761B84-0F20-492A-A536-8ECF4BCDB581}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A75D73C8-06FA-40A1-9DCB-F2259AC3CE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A75D73C8-06FA-40A1-9DCB-F2259AC3CE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A75D73C8-06FA-40A1-9DCB-F2259AC3CE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A75D73C8-06FA-40A1-9DCB-F2259AC3CE0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53D261FF-6264-4D94-AC40-C0F5786D71CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53D261FF-6264-4D94-AC40-C0F5786D71CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53D261FF-6264-4D94-AC40-C0F5786D71CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53D261FF-6264-4D94-AC40-C0F5786D71CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD37542-6D8E-4B23-A836-7E6065B221A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD37542-6D8E-4B23-A836-7E6065B221A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD37542-6D8E-4B23-A836-7E6065B221A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD37542-6D8E-4B23-A836-7E6065B221A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C926231D-0173-4696-B336-FD73CAFCE247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C926231D-0173-4696-B336-FD73CAFCE247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C926231D-0173-4696-B336-FD73CAFCE247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C926231D-0173-4696-B336-FD73CAFCE247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1DC9ADD-702E-48AD-863F-C9594DF20990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1DC9ADD-702E-48AD-863F-C9594DF20990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1DC9ADD-702E-48AD-863F-C9594DF20990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1DC9ADD-702E-48AD-863F-C9594DF20990}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76CAEE81-BDA7-439B-BEBB-58DBD8CBA299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76CAEE81-BDA7-439B-BEBB-58DBD8CBA299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76CAEE81-BDA7-439B-BEBB-58DBD8CBA299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76CAEE81-BDA7-439B-BEBB-58DBD8CBA299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0A63D77-A526-4D81-983E-A38414FD1F0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0A63D77-A526-4D81-983E-A38414FD1F0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0A63D77-A526-4D81-983E-A38414FD1F0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0A63D77-A526-4D81-983E-A38414FD1F0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFFB49F3-5696-4649-956F-F1B83786BBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFFB49F3-5696-4649-956F-F1B83786BBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFFB49F3-5696-4649-956F-F1B83786BBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFFB49F3-5696-4649-956F-F1B83786BBF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216D20C9-45D1-4BAD-AE4B-5F172C3D03C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216D20C9-45D1-4BAD-AE4B-5F172C3D03C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216D20C9-45D1-4BAD-AE4B-5F172C3D03C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216D20C9-45D1-4BAD-AE4B-5F172C3D03C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0EC0DE5-5C8F-4448-A8B0-FEEF14422667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0EC0DE5-5C8F-4448-A8B0-FEEF14422667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0EC0DE5-5C8F-4448-A8B0-FEEF14422667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0EC0DE5-5C8F-4448-A8B0-FEEF14422667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D6BE945-656B-4434-86AF-9520FC50D2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6BE945-656B-4434-86AF-9520FC50D2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6BE945-656B-4434-86AF-9520FC50D2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6BE945-656B-4434-86AF-9520FC50D2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D4E0C4-660D-4C98-B393-76E2CC07D0A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D4E0C4-660D-4C98-B393-76E2CC07D0A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D4E0C4-660D-4C98-B393-76E2CC07D0A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D4E0C4-660D-4C98-B393-76E2CC07D0A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A33743C-928C-4867-B2D2-D76125796D5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A33743C-928C-4867-B2D2-D76125796D5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A33743C-928C-4867-B2D2-D76125796D5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A33743C-928C-4867-B2D2-D76125796D5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94BBC091-911A-4D8D-A428-30349BBDFFA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94BBC091-911A-4D8D-A428-30349BBDFFA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94BBC091-911A-4D8D-A428-30349BBDFFA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94BBC091-911A-4D8D-A428-30349BBDFFA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39ED86D9-6AF8-474F-AF2B-9946F17BDF56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39ED86D9-6AF8-474F-AF2B-9946F17BDF56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39ED86D9-6AF8-474F-AF2B-9946F17BDF56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39ED86D9-6AF8-474F-AF2B-9946F17BDF56}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9445ABD7-37C8-4DDC-8F18-C981DA7085D8} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{118CCD3A-D266-406C-8A5E-F7E0F986D3E5} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{CF53ADB9-F8DE-4038-8DF6-EF26121EBDB8} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{013D445E-2F57-46DD-A55B-D9148E03D520} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{CF9C0166-863C-492E-9FD7-8113295308FD} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{083C20CF-68C1-4548-B7B9-9A9D049228AC} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{4AC2D5A9-C888-437C-9994-BDA6A3A2687D} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{67B57DDD-D60A-48B5-AD4A-6DBDC20CB381} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{A02580A8-495F-443A-970A-E667E1CC712F} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{1E761B84-0F20-492A-A536-8ECF4BCDB581} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{A75D73C8-06FA-40A1-9DCB-F2259AC3CE0E} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{53D261FF-6264-4D94-AC40-C0F5786D71CC} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{DFD37542-6D8E-4B23-A836-7E6065B221A0} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{C926231D-0173-4696-B336-FD73CAFCE247} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{A1DC9ADD-702E-48AD-863F-C9594DF20990} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{76CAEE81-BDA7-439B-BEBB-58DBD8CBA299} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{B0A63D77-A526-4D81-983E-A38414FD1F0B} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{BFFB49F3-5696-4649-956F-F1B83786BBF4} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+		{216D20C9-45D1-4BAD-AE4B-5F172C3D03C5} = {184966F8-8133-46DD-AB87-F70D7845EA1C}
+		{C0EC0DE5-5C8F-4448-A8B0-FEEF14422667} = {184966F8-8133-46DD-AB87-F70D7845EA1C}
+		{7D6BE945-656B-4434-86AF-9520FC50D2BD} = {184966F8-8133-46DD-AB87-F70D7845EA1C}
+		{54D4E0C4-660D-4C98-B393-76E2CC07D0A3} = {184966F8-8133-46DD-AB87-F70D7845EA1C}
+		{5A33743C-928C-4867-B2D2-D76125796D5F} = {184966F8-8133-46DD-AB87-F70D7845EA1C}
+		{94BBC091-911A-4D8D-A428-30349BBDFFA5} = {184966F8-8133-46DD-AB87-F70D7845EA1C}
+		{39ED86D9-6AF8-474F-AF2B-9946F17BDF56} = {93642A19-BF0B-4736-82D8-CDFB6A1F1C36}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 27
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ilerler.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Ruya.Core\\Ruya.Core.csproj
+		SccProjectTopLevelParentUniqueName1 = Master.sln
+		SccProjectName1 = Ruya.Core
+		SccLocalPath1 = Ruya.Core
+		SccProjectUniqueName2 = Ruya.Diagnostics\\Ruya.Diagnostics.csproj
+		SccProjectTopLevelParentUniqueName2 = Master.sln
+		SccProjectName2 = Ruya.Diagnostics
+		SccLocalPath2 = Ruya.Diagnostics
+		SccProjectUniqueName3 = Ruya.IO\\Ruya.IO.csproj
+		SccProjectTopLevelParentUniqueName3 = Master.sln
+		SccProjectName3 = Ruya.IO
+		SccLocalPath3 = Ruya.IO
+		SccProjectUniqueName4 = Ruya.Data.Entity\\Ruya.Data.Entity.csproj
+		SccProjectTopLevelParentUniqueName4 = Master.sln
+		SccProjectName4 = Ruya.Data.Entity
+		SccLocalPath4 = Ruya.Data.Entity
+		SccProjectUniqueName5 = Ruya.Json\\Ruya.Json.csproj
+		SccProjectTopLevelParentUniqueName5 = Master.sln
+		SccProjectName5 = Ruya.Json
+		SccLocalPath5 = Ruya.Json
+		SccProjectUniqueName6 = Ruya.Xml\\Ruya.Xml.csproj
+		SccProjectTopLevelParentUniqueName6 = Master.sln
+		SccProjectName6 = Ruya.Xml
+		SccLocalPath6 = Ruya.Xml
+		SccProjectUniqueName7 = Ruya.Net\\Ruya.Net.csproj
+		SccProjectTopLevelParentUniqueName7 = Master.sln
+		SccProjectName7 = Ruya.Net
+		SccLocalPath7 = Ruya.Net
+		SccProjectUniqueName8 = Ruya.Configuration\\Ruya.Configuration.csproj
+		SccProjectTopLevelParentUniqueName8 = Master.sln
+		SccProjectName8 = Ruya.Configuration
+		SccLocalPath8 = Ruya.Configuration
+		SccProjectUniqueName9 = Ruya.Caching\\Ruya.Caching.csproj
+		SccProjectTopLevelParentUniqueName9 = Master.sln
+		SccProjectName9 = Ruya.Caching
+		SccLocalPath9 = Ruya.Caching
+		SccProjectUniqueName10 = Ruya.Domain\\Ruya.Domain.csproj
+		SccProjectTopLevelParentUniqueName10 = Master.sln
+		SccProjectName10 = Ruya.Domain
+		SccLocalPath10 = Ruya.Domain
+		SccProjectUniqueName11 = Ruya.Security\\Ruya.Security.csproj
+		SccProjectTopLevelParentUniqueName11 = Master.sln
+		SccProjectName11 = Ruya.Security
+		SccLocalPath11 = Ruya.Security
+		SccProjectUniqueName12 = Ruya.Scheduler\\Ruya.Scheduler.csproj
+		SccProjectTopLevelParentUniqueName12 = Master.sln
+		SccProjectName12 = Ruya.Scheduler
+		SccLocalPath12 = Ruya.Scheduler
+		SccProjectUniqueName13 = Ruya.Composition\\Ruya.Composition.csproj
+		SccProjectTopLevelParentUniqueName13 = Master.sln
+		SccProjectName13 = Ruya.Composition
+		SccLocalPath13 = Ruya.Composition
+		SccProjectUniqueName14 = Ruya.Composition.Interfaces\\Ruya.Composition.Interfaces.csproj
+		SccProjectTopLevelParentUniqueName14 = Master.sln
+		SccProjectName14 = Ruya.Composition.Interfaces
+		SccLocalPath14 = Ruya.Composition.Interfaces
+		SccProjectUniqueName15 = Ruya.Core.Interfaces\\Ruya.Core.Interfaces.csproj
+		SccProjectTopLevelParentUniqueName15 = Master.sln
+		SccProjectName15 = Ruya.Core.Interfaces
+		SccLocalPath15 = Ruya.Core.Interfaces
+		SccProjectUniqueName16 = Ruya.Data\\Ruya.Data.csproj
+		SccProjectTopLevelParentUniqueName16 = Master.sln
+		SccProjectName16 = Ruya.Data
+		SccLocalPath16 = Ruya.Data
+		SccProjectUniqueName17 = Ruya.Data.Entity.Interfaces\\Ruya.Data.Entity.Interfaces.csproj
+		SccProjectTopLevelParentUniqueName17 = Master.sln
+		SccProjectName17 = Ruya.Data.Entity.Interfaces
+		SccLocalPath17 = Ruya.Data.Entity.Interfaces
+		SccProjectUniqueName18 = Ruya.Web\\Ruya.Web.csproj
+		SccProjectTopLevelParentUniqueName18 = Master.sln
+		SccProjectName18 = Ruya.Web
+		SccLocalPath18 = Ruya.Web
+		SccProjectUniqueName19 = Ruya.SignalR\\Ruya.SignalR.csproj
+		SccProjectTopLevelParentUniqueName19 = Master.sln
+		SccProjectName19 = Ruya.SignalR
+		SccLocalPath19 = Ruya.SignalR
+		SccProjectUniqueName20 = Ruya.Host\\Ruya.Host.csproj
+		SccProjectName20 = Ruya.Host
+		SccLocalPath20 = Ruya.Host
+		SccProjectUniqueName21 = Ruya.Configuration.Tests\\Ruya.Configuration.Tests.csproj
+		SccProjectTopLevelParentUniqueName21 = Master.sln
+		SccProjectName21 = Ruya.Configuration.Tests
+		SccLocalPath21 = Ruya.Configuration.Tests
+		SccProjectUniqueName22 = Ruya.Core.Tests\\Ruya.Core.Tests.csproj
+		SccProjectTopLevelParentUniqueName22 = Master.sln
+		SccProjectName22 = Ruya.Core.Tests
+		SccLocalPath22 = Ruya.Core.Tests
+		SccProjectUniqueName23 = Ruya.Data.Entity.Tests\\Ruya.Data.Entity.Tests.csproj
+		SccProjectTopLevelParentUniqueName23 = Master.sln
+		SccProjectName23 = Ruya.Data.Entity.Tests
+		SccLocalPath23 = Ruya.Data.Entity.Tests
+		SccProjectUniqueName24 = Ruya.Diagnostics.Tests\\Ruya.Diagnostics.Tests.csproj
+		SccProjectTopLevelParentUniqueName24 = Master.sln
+		SccProjectName24 = Ruya.Diagnostics.Tests
+		SccLocalPath24 = Ruya.Diagnostics.Tests
+		SccProjectUniqueName25 = Ruya.Net.Tests\\Ruya.Net.Tests.csproj
+		SccProjectTopLevelParentUniqueName25 = Master.sln
+		SccProjectName25 = Ruya.Net.Tests
+		SccLocalPath25 = Ruya.Net.Tests
+		SccProjectUniqueName26 = Ruya.Security.Tests\\Ruya.Security.Tests.csproj
+		SccProjectTopLevelParentUniqueName26 = Master.sln
+		SccProjectName26 = Ruya.Security.Tests
+		SccLocalPath26 = Ruya.Security.Tests
+	EndGlobalSection
+EndGlobal
