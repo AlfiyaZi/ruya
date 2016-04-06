@@ -50,7 +50,7 @@
       <HintPath>..\packages\Ruya.Diagnostics.1.0.323.0961\lib\net40\Ruya.Diagnostics.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.IO, Version=1.0.282.301, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Ruya.IO, Version=1.0.325.961, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Ruya.IO.1.0.325.0961\lib\net40\Ruya.IO.dll</HintPath>
       <Private>True</Private>
     </Reference>
