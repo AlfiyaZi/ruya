@@ -40,12 +40,12 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ruya.Core, Version=1.0.296.306, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.296.306\lib\net40\Ruya.Core.dll</HintPath>
+    <Reference Include="Ruya.Core, Version=1.0.312.962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Core.1.0.312.0962\lib\net40\Ruya.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Core.Interfaces, Version=1.0.296.306, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.296.306\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
+    <Reference Include="Ruya.Core.Interfaces, Version=1.0.312.962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Core.1.0.312.0962\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -86,7 +86,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NuGet.nuspec" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\LICENSE.txt">
