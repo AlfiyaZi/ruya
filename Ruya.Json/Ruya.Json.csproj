@@ -40,12 +40,12 @@
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Core, Version=1.0.279.298, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.279.298\lib\net40\Ruya.Core.dll</HintPath>
+    <Reference Include="Ruya.Core, Version=1.0.322.962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Core.1.0.322.0962\lib\net40\Ruya.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Core.Interfaces, Version=1.0.279.298, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.279.298\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
+    <Reference Include="Ruya.Core.Interfaces, Version=1.0.322.962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Core.1.0.322.0962\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -66,6 +66,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\NuGet.Config">
+      <Link>NuGet.Config</Link>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

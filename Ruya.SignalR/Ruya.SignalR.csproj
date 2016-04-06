@@ -72,15 +72,15 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="Ruya.Core, Version=1.0.188.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.317.0962\lib\net40\Ruya.Core.dll</HintPath>
+      <HintPath>..\packages\Ruya.Core.1.0.322.0962\lib\net40\Ruya.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ruya.Core.Interfaces, Version=1.0.188.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.317.0962\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
+      <HintPath>..\packages\Ruya.Core.1.0.322.0962\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Diagnostics, Version=1.0.318.961, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Diagnostics.1.0.318.0961\lib\net40\Ruya.Diagnostics.dll</HintPath>
+    <Reference Include="Ruya.Diagnostics, Version=1.0.323.961, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Diagnostics.1.0.323.0961\lib\net40\Ruya.Diagnostics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />

@@ -38,20 +38,20 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ruya.Core, Version=1.0.279.298, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.279.298\lib\net40\Ruya.Core.dll</HintPath>
+    <Reference Include="Ruya.Core, Version=1.0.322.962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Core.1.0.322.0962\lib\net40\Ruya.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Core.Interfaces, Version=1.0.279.298, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.279.298\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
+    <Reference Include="Ruya.Core.Interfaces, Version=1.0.322.962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Core.1.0.322.0962\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Diagnostics, Version=1.0.281.300, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Diagnostics.1.0.281.300\lib\net40\Ruya.Diagnostics.dll</HintPath>
+    <Reference Include="Ruya.Diagnostics, Version=1.0.323.961, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Diagnostics.1.0.323.0961\lib\net40\Ruya.Diagnostics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ruya.IO, Version=1.0.282.301, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.IO.1.0.319.0961\lib\net40\Ruya.IO.dll</HintPath>
+      <HintPath>..\packages\Ruya.IO.1.0.325.0961\lib\net40\Ruya.IO.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -80,12 +80,12 @@
     </CodeAnalysisDictionary>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="..\LICENSE.txt">
       <Link>LICENSE.txt</Link>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
