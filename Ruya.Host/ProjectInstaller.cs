@@ -49,10 +49,11 @@ namespace Ruya.Host
                 serviceController.Start();
                 serviceController.WaitForStatus(ServiceControllerStatus.Running);
             }
+            // ReSharper disable once CatchAllClause
             catch (Exception)
             {
-                // HARD-CODED constant
-                MessageBox.Show(@"Service couldn't be started, you will have to do it manually");
+                const string message = "Service couldn't be started, you will have to do it manually";
+                MessageBox.Show(message);
             }
         }        
     }

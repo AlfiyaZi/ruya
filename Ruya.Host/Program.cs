@@ -35,8 +35,8 @@ namespace Ruya.Host
                 const int mutexTimeout = 2;
                 if (!mutex.WaitOne(TimeSpan.FromSeconds(mutexTimeout), false))
                 {
-                    // HARD-CODED constant
-                    Debug.WriteLine("Another instance is running.");
+                    const string message = "Another instance is running.";
+                    Debug.WriteLine(message);
                     return;
                 }
                 RunProgram(args);
@@ -45,21 +45,25 @@ namespace Ruya.Host
 
         [Conditional("DEBUG")]
         private void DeleteDefaultTraceLogFile()
-        {           
-            TraceListener traceListener = Trace.Listeners["xmlTextWriter"];
+        {
+            const string listenerName = "xmlTextWriter";
+            const string fieldName = "initializeData";
+            TraceListener traceListener = Trace.Listeners[listenerName];
             FieldInfo fieldInfo = traceListener?.GetType()
-                                                .GetField("initializeData", BindingFlags.Instance | BindingFlags.NonPublic);
+                                                .GetField(fieldName, BindingFlags.Instance | BindingFlags.NonPublic);
             var logFile = (string)fieldInfo?.GetValue(traceListener);
-            if (File.Exists(logFile))
+            if (logFile != null && File.Exists(logFile))
             {
                 File.Delete(logFile);
             }
         }
 
-        [Conditional("DEBUG")]
+        [Conditional(Constants.Debug)]
         private static void DeleteLogFile()
         {
-            string logFile = Tracer.Instance.GetAttributeValue(null, "rollingXmlWriter", "initializeData");
+            const string listenerName = "rollingXmlWriter";
+            const string fieldName = "initializeData";
+            string logFile = Tracer.Instance.GetAttributeValue(null, listenerName, fieldName);
             Tracer.Instance.CloseAll();
             if (logFile != null)
             {
@@ -72,12 +76,11 @@ namespace Ruya.Host
 
         private static void RunProgram(string[] args)
         {
-            //!++ remove the directive before publish
             DeleteLogFile();
 
             // directory
-            //x Directory.SetCurrentDirectory(Path.GetDirectoryName(ExecutingAssembly.Location));
-            DomainHelper.DetectCurrentDirectory();
+            Directory.SetCurrentDirectory(Path.GetDirectoryName(ExecutingAssembly.Location));
+            //x DomainHelper.DetectCurrentDirectory();
 
             // unhandled exceptions
             var unhandledExceptionHelper = new UnhandledExceptionHelper();

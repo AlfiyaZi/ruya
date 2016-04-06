@@ -17,25 +17,12 @@ namespace Ruya.Data.Entity
     {
         private readonly ObjectContext _context;
         private bool _disposed;
+
         /*
         private Repository<Case> _case;
         private Repository<FieldReport> _fieldReport;
-
-        public IRepository<Case> Case
-        {
-            get
-            {
-                return _case ?? (_case = new Repository<Case>(_context));
-            }
-        }
-
-        public IRepository<FieldReport> FieldReport
-        {
-            get
-            {
-                return _fieldReport ?? (_fieldReport = new Repository<FieldReport>(_context));
-            }
-        }
+        public IRepository<Case> Case => _case ?? (_case = new Repository<Case>(_context));
+        public IRepository<FieldReport> FieldReport => _fieldReport ?? (_fieldReport = new Repository<FieldReport>(_context));
         */
 
         public UnitOfWork(string connectionString)
@@ -119,11 +106,5 @@ namespace Ruya.Data.Entity
 
             _disposed = true;
         }
-
-        /*
-        public IRepository<Case> Case => _case ?? (_case = new Repository<Case>(_context));
-
-        public IRepository<FieldReport> FieldReport => _fieldReport ?? (_fieldReport = new Repository<FieldReport>(_context));
-*/
     }
 }
