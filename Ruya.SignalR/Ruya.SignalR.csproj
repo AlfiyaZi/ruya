@@ -72,15 +72,15 @@
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
     <Reference Include="Ruya.Core, Version=1.0.188.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.188.262\lib\net46\Ruya.Core.dll</HintPath>
+      <HintPath>..\packages\Ruya.Core.1.0.317.0962\lib\net40\Ruya.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ruya.Core.Interfaces, Version=1.0.188.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.188.262\lib\net46\Ruya.Core.Interfaces.dll</HintPath>
+      <HintPath>..\packages\Ruya.Core.1.0.317.0962\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Diagnostics, Version=1.0.189.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Diagnostics.1.0.189.262\lib\net46\Ruya.Diagnostics.dll</HintPath>
+    <Reference Include="Ruya.Diagnostics, Version=1.0.318.961, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Diagnostics.1.0.318.0961\lib\net40\Ruya.Diagnostics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -109,14 +109,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\NuGet.nuspec">
+      <Link>NuGet.nuspec</Link>
+    </None>
     <None Include="app.config" />
-    <None Include="NuGet.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDictionary Include="..\GlobalCodeAnalysisDictionary.xml">
       <Link>Properties\GlobalCodeAnalysisDictionary.xml</Link>
     </CodeAnalysisDictionary>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\LICENSE.txt">
+      <Link>LICENSE.txt</Link>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

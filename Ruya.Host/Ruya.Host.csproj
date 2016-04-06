@@ -111,24 +111,24 @@
       <HintPath>..\packages\Ruya.Configuration.1.0.195.265\lib\net46\Ruya.Configuration.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Core, Version=1.0.188.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.188.262\lib\net46\Ruya.Core.dll</HintPath>
+    <Reference Include="Ruya.Core, Version=1.0.317.962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Core.1.0.317.0962\lib\net40\Ruya.Core.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Core.Interfaces, Version=1.0.188.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Core.1.0.188.262\lib\net46\Ruya.Core.Interfaces.dll</HintPath>
+    <Reference Include="Ruya.Core.Interfaces, Version=1.0.317.962, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Core.1.0.317.0962\lib\net40\Ruya.Core.Interfaces.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.Diagnostics, Version=1.0.189.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.Diagnostics.1.0.189.262\lib\net46\Ruya.Diagnostics.dll</HintPath>
+    <Reference Include="Ruya.Diagnostics, Version=1.0.318.961, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.Diagnostics.1.0.318.0961\lib\net40\Ruya.Diagnostics.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ruya.Domain, Version=1.0.203.274, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Ruya.Domain.1.0.203.274\lib\net46\Ruya.Domain.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Ruya.IO, Version=1.0.190.262, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ruya.IO.1.0.190.262\lib\net46\Ruya.IO.dll</HintPath>
+    <Reference Include="Ruya.IO, Version=1.0.319.961, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ruya.IO.1.0.319.0961\lib\net40\Ruya.IO.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Ruya.Net, Version=1.0.191.263, Culture=neutral, processorArchitecture=MSIL">
@@ -239,6 +239,9 @@
     <Compile Include="Tests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\NuGet.nuspec">
+      <Link>NuGet.nuspec</Link>
+    </None>
     <None Include="App.config">
       <SubType>Designer</SubType>
       <TransformOnBuild>true</TransformOnBuild>
@@ -284,7 +287,6 @@
       <IsTransformFile>True</IsTransformFile>
       <DependentUpon>DomainConfiguration.Encrypted.config</DependentUpon>
     </None>
-    <None Include="NuGet.nuspec" />
     <None Include="package.json" />
     <None Include="packages.config" />
     <None Include="Ruya.Host.nuspec">
@@ -316,6 +318,9 @@
     <TypeScriptCompile Include="WebContent\scripts\services\value-dolarSign.ts" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\LICENSE.txt">
+      <Link>LICENSE.txt</Link>
+    </Content>
     <Content Include="gulpfile.js" />
     <Content Include="WebContent\default.html" />
     <Content Include="WebContent\images\dataloader.gif" />

@@ -69,7 +69,6 @@
     </CodeAnalysisDictionary>
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuGet.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

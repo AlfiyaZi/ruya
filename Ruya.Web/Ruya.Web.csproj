@@ -54,9 +54,6 @@
     </CodeAnalysisDictionary>
   </ItemGroup>
   <ItemGroup>
-    <None Include="NuGet.nuspec" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="..\LICENSE.txt">
       <Link>LICENSE.txt</Link>
     </Content>
