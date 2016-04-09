@@ -3,20 +3,17 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration.Install;
 using System.Diagnostics;
-using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.ServiceProcess;
 using System.Threading;
 using Menu;
-using Ruya.Configuration;
 using Ruya.Core;
 using Ruya.Diagnostics;
 using Ruya.Domain;
 using Ruya.Net;
 using Ruya.Scheduler;
-using Ruya.Host.Properties;
 
 namespace Ruya.Host
 {
@@ -24,6 +21,7 @@ namespace Ruya.Host
     {
         private static readonly Assembly ExecutingAssembly = Assembly.GetExecutingAssembly();
         private static readonly FileVersionInfo FileVersionInfo = ExecutingAssembly.GetFileVersionInfo();
+        private static readonly string Configuration = ExecutingAssembly.GetConfigurationAttribute();
         public static string ServiceName = FileVersionInfo.ProductName;
 
         private static void Main(string[] args)
@@ -76,7 +74,7 @@ namespace Ruya.Host
 
         private static void RunProgram(string[] args)
         {
-            DeleteLogFile();
+            //x DeleteLogFile();
 
             // directory
             Directory.SetCurrentDirectory(Path.GetDirectoryName(ExecutingAssembly.Location));
@@ -115,8 +113,8 @@ namespace Ruya.Host
 
         private static string GetCopyrightMessage()
         {
-            string configuration = ExecutingAssembly.GetConfigurationAttribute();
-            string output = string.Format(CultureInfo.InvariantCulture, Resources.Message_Copyright, FileVersionInfo.ProductName, FileVersionInfo.ProductVersion, FileVersionInfo.LegalCopyright, FileVersionInfo.LegalTrademarks, FileVersionInfo.CompanyName, configuration);
+            // HARD-CODED
+            string output = $"{FileVersionInfo.ProductName} v{FileVersionInfo.ProductVersion} [{Configuration}] {FileVersionInfo.LegalCopyright} {FileVersionInfo.LegalTrademarks} is trademark of {FileVersionInfo.CompanyName}, registered in the U.S.and other countries.";
             return output;
         }
 
@@ -132,23 +130,41 @@ namespace Ruya.Host
             Tracer.Instance.TraceInformation(new string('~', 79));
         }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "args")]
-        internal static void Run(string[] args)
+        private static bool ProcessArguments(string[] args)
         {
-            Action defaultAction = DefaultAction;
-            if (!Environment.UserInteractive)
+            // handle parameters
+            bool parameterProcessed = false;
+
+            const string install = "--install";
+            const string uninstall = "--uninstall";
+            foreach (string parameters in args)
             {
-                defaultAction();
+                switch (parameters)
+                {
+                    case install:
+                        InstallService();
+                        parameterProcessed = true;
+                        break;
+                    case uninstall:
+                        UnInstallService();
+                        parameterProcessed = true;
+                        break;
+                }
             }
-            else
-            {
-                var menu = new MenuCollection(GetCopyrightMessage(),
+            return parameterProcessed;
+        }
+
+        private static void HandleMenu(Action defaultAction)
+        {
+            // ReSharper disable once JoinDeclarationAndInitializer
+            bool throwError;
 #if DEBUG
-                                              true
+            throwError = true;
 #else
-                                          false
+               throwError = false;
 #endif
-                    )
+            // ReSharper disable once ConditionIsAlwaysTrueOrFalse
+            var menu = new MenuCollection(GetCopyrightMessage(), throwError)
                            {
                                defaultAction,
 #if !DEBUG
@@ -161,10 +177,27 @@ namespace Ruya.Host
                                //SchemaReader,
                                //Draft.TraceTester
 #endif
-                };
-                menu.Run();
-            }
+                           };
+            menu.Run();
+        }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA1801:ReviewUnusedParameters", MessageId = "args")]
+        internal static void Run(string[] args)
+        {
+            Action defaultAction = DefaultAction;
+            if (!Environment.UserInteractive)
+            {
+                defaultAction();
+            }
+            else
+            {
+                bool parameterProcessed = ProcessArguments(args);
+                if (parameterProcessed)
+                {
+                    return;
+                }
+                HandleMenu(defaultAction);
+            }
         }
 
         [Description("Install Service")]
@@ -183,11 +216,7 @@ namespace Ruya.Host
         [Description("Default Action")]
         internal static void DefaultAction()
         {
-#warning Refactor
-            ConfigurationProvider configurationProvider = new ConfigurationProvider().SetAssembly(ExecutingAssembly);
-            // HARD-CODED constant
-            string serverAddressFromConfiguration = configurationProvider.GetSettingValue("ServerAddress");
-
+            string serverAddressFromConfiguration = Properties.Settings.Default.ServerAddress;
             List<string> serverAddresses = serverAddressFromConfiguration.SplitCSV()
                                                                          .Select(address => address.Contains(Constants.WildCardStar)
                                                                                                 ? address
@@ -195,32 +224,17 @@ namespace Ruya.Host
                                                                          .ToList();
             Server.Start(serverAddresses, TaskToWork, true);
         }
-
-        public static KeyValuePair<TimeSpan, int> GetJobSettings()
-        {
-            ConfigurationProvider configurationProvider = new ConfigurationProvider().SetAssembly(ExecutingAssembly);
-            // HARD-CODED constant
-            string interval = configurationProvider.GetSettingValue("JobInterval");
-            TimeSpan serviceInterval = TimeSpanHelper.GetInterval(interval);
-            // HARD-CODED constant
-            string maxSkipAllowed = configurationProvider.GetSettingValue("JobMaxSkipAllowed");
-            var output = new KeyValuePair<TimeSpan, int>(serviceInterval, Convert.ToInt32(maxSkipAllowed));
-            return output;
-        }
-
+        
         private static Job _job;
 
         private static void TaskToWork()
         {
-            KeyValuePair<TimeSpan, int> jobSettings = GetJobSettings();
             _job = new Job
                    {
-                       // HARD-CODED constant
-                       Name = MethodBase.GetCurrentMethod()
-                                        .Name,
-                       Interval = jobSettings.Key,
-                       MaxSkipAllowed = jobSettings.Value
-                   };
+                       Name = MethodBase.GetCurrentMethod().Name,
+                       Interval = Properties.Settings.Default.JobInterval,
+                       MaxSkipAllowed = Properties.Settings.Default.JobMaxSkipAllowed
+            };
             _job.Skip += SkipJob;
             _job.SetJob(TaskToRepeat)
                 .StartJob();
@@ -228,7 +242,7 @@ namespace Ruya.Host
 
         private static void SkipJob(object sender, SkipEventArgs e)
         {
-            // HARD-CODED constant
+            // HARD-CODED
             Tracer.Instance.TraceInformation($"Skip count #{e.Counter}");
         }
 
