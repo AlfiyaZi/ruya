@@ -1,4 +1,6 @@
 # Initial Setup
+
+[![Join the chat at https://gitter.im/cilerler/Ruya](https://badges.gitter.im/cilerler/Ruya.svg)](https://gitter.im/cilerler/Ruya?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 1. Add tags below into TASK LIST **Tools\Options\Environment\Task List**
     - HARD-CODED _priority high_ 
         - use to mark constants
